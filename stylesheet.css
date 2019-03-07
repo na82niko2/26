@@ -62,13 +62,13 @@ h1 {
 }
 
 .cover-content {
-  float:left;
   position: absolute;
-  bottom:5px;
+  bottom:10px;
 }
 
 .cover-content h2 {
   font-size: 20px;
+
 }
 
 .cover-content p {
@@ -95,9 +95,9 @@ h1 {
 /*---section---*/
 
 .contents-wrapper {
-  width: 940px;
+  width: 100%;
   background-color: #ffff7f;
-  padding: 20px;
+  padding: 10px;
   border: 1px solid #f5deb3;
   text-align: center;
   margin: auto;
@@ -110,7 +110,7 @@ h1 {
 
 .contents ul {
   list-style-type: none;
-  margin:10px;
+  /* margin:10px; */
 }
 
 .contents li {
@@ -119,8 +119,8 @@ h1 {
 
 /* mask */
 .contents-icon {
-	width:			280px;
-	height:			280px;
+	width:			200px;
+	height:			200px;
 	overflow:		hidden;
 	margin:			10px 8px 10px 16px;
 	position:		relative;
