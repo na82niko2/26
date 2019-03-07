@@ -1,0 +1,263 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding:0;
+    text-align: center;
+}
+
+a:hover {
+  opacity:0.5;
+  cursor: pointer;
+}
+
+/*---section---*/
+section {
+  margin-bottom: 80px;
+}
+
+section p {
+    opacity: 0.9;
+    margin: 15px 0px;
+    color:gray;
+}
+
+h1 {
+  opacity: 0.7;
+  font-size: 100px;
+  letter-spacing: 4px;
+  color:white;
+  text-shadow: 3px 3px 0 gray;
+}
+
+/*---section---*/
+
+.navbar {
+  height: 80px;
+  width :100%;
+  background-color: #93ffff;
+  position:fixed;
+  bottom: 0px;
+  z-index: 10;
+  opacity:0.5;
+}
+
+.navbar-txt {
+  font-size:30px;
+  font-weight: bold;
+  padding:20px;
+  text-align: center;
+}
+
+/*---section---*/
+
+
+ .cover {
+  text-align: left;
+  background-repeat: no-repeat;
+  height:640px;
+  padding:0 40px;
+  color:white;
+  background: center/cover url(topback.jpg);
+}
+
+.cover-content {
+  float:left;
+  position: absolute;
+  bottom:10px;
+}
+
+.cover-content h2 {
+  font-size: 50px;
+}
+
+.cover-content p {
+  float:left;
+  padding-left: 20px;
+  font-size: 20px;
+}
+
+.icon {
+  border-radius: 50%;
+  border: 3px solid white;
+  box-shadow: 0 5px 5px black;
+  float:left;
+}
+
+/*---section---*/
+
+.intro-wrapper {
+  text-align: center;
+  margin:20px 0;
+  color:#5f5d60;
+}
+
+/*---section---*/
+
+.contents-wrapper {
+  width: 940px;
+  background-color: #ffff7f;
+  padding: 20px;
+  border: 1px solid #f5deb3;
+  text-align: center;
+  margin: auto;
+}
+
+.contents-wrapper h2 {
+  background-color: #7fff7f;
+  color:white;
+}
+
+.contents ul {
+  list-style-type: none;
+  margin:10px;
+}
+
+.contents li {
+  display :inline-block;
+}
+
+/* mask */
+.contents-icon {
+	width:			280px;
+	height:			280px;
+	overflow:		hidden;
+	margin:			10px 8px 10px 16px;
+	position:		relative;
+  transform-origin: right top;
+}
+.contents-icon .caption {
+	width:			100%;
+	height:			100%;
+	visibility:		hidden;
+	font-size:		70%;
+	color:			#fff;
+	top:			0;
+	left:			0;
+	position:		absolute;
+	text-align:		center;
+	-webkit-transition:	all 0.4s step-end;
+	transition:		all 0.4s step-end;
+}
+.contents-icon:hover .caption {
+	visibility:		visible;
+}
+.contents-icon .caption p {
+	font-size:		130%;
+	padding-top:		70px;
+	color:			#fff;
+	opacity:		0;
+}
+.contents-icon:hover .caption p {
+	opacity:		1;
+}
+.contents-icon .mask1, .contents-icon .mask2 {
+	width:			100%;
+	height:			50%;
+	position:		absolute;
+	left:			0;
+	background-color:	rgba(0,0,0,0.4);
+	-webkit-transition:	all 0.4s ease;
+	transition:		all 0.4s ease;
+}
+.contents-icon .mask1 {
+	top:			-50%;
+}
+.contents-icon:hover .mask1 {
+	top:			0;
+}
+.contents-icon .mask2 {
+	bottom:			-50%;
+}
+.contents-icon:hover .mask2 {
+	bottom:			0;
+}
+
+
+/* footer */
+
+footer {
+  height: 120px;
+  color:gray;
+  text-align: center;
+  margin-top: 40px;
+}
+
+
+/* si */
+.signup-show {
+  background-color: #0075c2;
+  width:80%;
+  font-weight: bold;
+  padding: 8px 24px;
+  color: white;
+  display: inline-block;
+  opacity: 0.8;
+  border-radius: 5px;
+}
+
+.signup-modal-wrapper {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 100;
+}
+
+.modal {
+  position: absolute;
+  top: 20%;
+  left: 34%;
+  background-color: #e6ecf0;
+  padding: 20px 0 40px;
+  border-radius: 10px;
+  width: 450px;
+  height: auto;
+  text-align: center;
+}
+
+.fa-times {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  color: rgba(128, 128, 128, 0.46);
+  cursor: pointer;
+}
+
+#signup-form {
+  width: 100%;
+}
+
+#signup-form h2 {
+  color: #5f5d60;
+  letter-spacing: 1px;
+  margin: 20px;
+}
+
+#signup-form p {
+  margin: 20px;
+  color:gray;
+}
+
+#signup-form input {
+  width: 320px;
+  margin-bottom: 20px;
+  font-size: 12px;
+  padding: 12px 12px;
+  border: 1px solid #d0d5d8;
+  border-radius: 5px;
+}
+
+#submit-btn {
+  display: inline-block;
+  padding: 14px 140px;
+  background-color: #67b5b7;
+  border: none;
+  border-radius: 3px;
+  color: white;
+  margin: 10px auto;
+  cursor: pointer;
+  font-weight: bold;
+}
