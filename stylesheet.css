@@ -63,7 +63,7 @@ h1 {
 
 .cover-content {
   position: absolute;
-  bottom:10px;
+  bottom:3px;
 }
 
 .cover-content h2 {
@@ -95,7 +95,7 @@ h1 {
 /*---section---*/
 
 .contents-wrapper {
-  width: 100%;
+/*   width: 100%; */
   background-color: #ffff7f;
   padding: 10px;
   border: 1px solid #f5deb3;
