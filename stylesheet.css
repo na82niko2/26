@@ -33,7 +33,7 @@ h1 {
 /*---section---*/
 
 .navbar {
-  height: 50px;
+  height: 60px;
   width :100%;
   background-color: #93ffff;
   position:fixed;
@@ -55,7 +55,7 @@ h1 {
  .cover {
   text-align: left;
   background-repeat: no-repeat;
-  width:640px;
+  hight:400px;
 /*   padding:0 40px; */
   color:white;
   background: center/cover url(topback.jpg);
