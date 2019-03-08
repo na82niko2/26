@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <title>めいさんのMyページ</title>
     <link rel="stylesheet" href="stylesheet.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex, nofollow">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script>
@@ -20,27 +21,29 @@ $('#close-modal').click(function() {
 
 });
     </script>
+  </head>
   <body>
-<div class="navbar">
-  <div class="navbar-txt">
-    友だち申請
-  </div>
-</div>
-<header>
-  <div class ="cover">
-    <h1>My Plofile</h1>
-    <div class="cover-content">
-      <img src="topicon.jpg" width=140 hight=140 class="icon">
-    <h2>めい</h2>
-      <p>女性 / 27歳 / 未婚 / OL</p><br>
-      <p>ショッピングと食べることが大好きです♡
-      癒しとか常に求めてます( *´艸｀)</p>
+<div id="wrapper">
+  <div class="navbar">
+    <div class="btn signup-show">
+      友だち申請をする！
     </div>
+  </div>
+	<header class="prof-header header_1">
+    <h1>My Plofile</h1>
+  <div class="prof-detaile">
+    <span class="table-cell"><img src="topicon.jpg" class="header-prof-icon" width="70"></span>
+    <span class="table-cell prof-bio">
+      <p class="name inline-block">めい</p>
+      <p class="inline-block attribute">27歳</p>
+      <p class="attribute">女性 / 未婚 / OL </p>
+      <p class="attribute">ショッピングと食べることが大好きです♡</p>
+    </span>
   </div>
 </header>
 <div class="intro-wrapper">
   <h2>めいさんのMyページ</h2>
-  <a class="signup-show">友だち申請をする</a>
+  <a class="btn signup-show">友だち申請をする</a>
 <div class="signup-modal-wrapper" id="signup-modal">
   <div class="modal">
     <div id="close-modal">
@@ -57,8 +60,6 @@ $('#close-modal').click(function() {
     </div>
   </div>
 </div>
-
-
 <div class="contents-wrapper">
   <h1>My Album</h1>
   <h2>～ Photo Gallery ～</h2>
@@ -66,7 +67,7 @@ $('#close-modal').click(function() {
   <ul>
     <li>
       <div class="contents-icon">
-        <img src="photo.fasf44ffa.jpg" width=200 hight=200>
+        <img src="photo.fasf44ffa.jpg" width=150 hight=150>
           <div class="mask1"></div>
           <div class="mask2"></div>
           <div class="caption">
@@ -76,7 +77,7 @@ $('#close-modal').click(function() {
     </li>
     <li>
       <div class="contents-icon">
-      <img src="photo.fhh6165ddr.jpg" width=200 hight=200>
+      <img src="photo.fhh6165ddr.jpg" width=150 hight=150>
         <div class="mask1"></div>
         <div class="mask2"></div>
         <div class="caption">
@@ -88,7 +89,7 @@ $('#close-modal').click(function() {
   <ul>
     <li>
       <div class="contents-icon">
-        <img src="photo.fjpog188kn.jpg" width=200 hight=200>
+        <img src="photo.fjpog188kn.jpg" width=150 hight=150>
           <div class="mask1"></div>
           <div class="mask2"></div>
           <div class="caption">
@@ -98,7 +99,7 @@ $('#close-modal').click(function() {
     </li>
     <li>
       <div class="contents-icon">
-        <img src="photo.finffs54fsdsfd6s1n.jpg" width=200 hight=200>
+        <img src="photo.finffs54fsdsfd6s1n.jpg" width=150 hight=150>
           <div class="mask1"></div>
           <div class="mask2"></div>
           <div class="caption">
@@ -108,18 +109,12 @@ $('#close-modal').click(function() {
     </li>
   </ul>
   <p>他にもいろいろ思い出の写真があります♪</br>いっぱい見て褒めてほしいな(*^^*)</p>
-</div>
-  <div class="btn-wrapper">
-    <a class="bt signup-show">もっと写真を見る</a>
   </div>
+    <a class="btn signup-show">もっと写真を見る</a>
+  </div>
+    <footer>
+      <small>© 2019 niko2Room</small>
+    </footer>
 </div>
-<footer>
-<small>© 2019 niko2Room</small>
-</footer>
-<script src="script.js"></script>
   </body>
 </html>
-
-
-
-<!----------->
