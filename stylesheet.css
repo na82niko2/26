@@ -1,35 +1,53 @@
-body {
-  font-family: sans-serif;
-  margin: 0;
-  padding:0;
-  text-align: center;
-}
 
+body {
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: "Helvetica Neue", Helvetica, Arial, YuGothic,'游ゴシック',
+             'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN',
+             Meiryo, Verdana, sans-serif;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+ul {
+	list-style: none;
+}
 a:hover {
   opacity:0.5;
   cursor: pointer;
 }
-
-/*---section---*/
-section {
-  margin-bottom: 80px;
-}
-
-section p {
-    opacity: 0.9;
-    margin: 15px 0px;
-    color:gray;
-}
-
 h1 {
   opacity: 0.7;
-  font-size: 35px;
+  font-size: 30px;
   letter-spacing: 4px;
   color:white;
   text-shadow: 3px 3px 0 gray;
+  padding:10px;
 }
 
-/*---section---*/
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+
+.left { float: left; }
+.right { float: right; }
+
+.inline-block { display: inline-block; }
+.block { display: block; }
+.table-cell { display: table-cell; }
+.icon { }
+
+#wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* nav
+--------------------------------- */
 
 .navbar {
   height: 60px;
@@ -38,88 +56,97 @@ h1 {
   position:fixed;
   bottom: 0px;
   z-index: 10;
-  opacity:0.5;
-}
-
-.navbar-txt {
-  font-size:15px;
-  font-weight: bold;
-  padding:20px;
+  opacity:0.9;
   text-align: center;
 }
 
-/*---section---*/
-
-
- .cover {
-  text-align: left;
-  background-repeat: no-repeat;
-  hight:400px;
-/*   padding:0 40px; */
-  color:white;
-  background: center/cover url(topback.jpg);
+/* Header
+--------------------------------- */
+.prof-header {
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  height: 285px;
 }
-
-.cover-content {
+.header_1 {
+  background-image: url('topback.jpg');
+}
+.header_2 {
+  background-image: url('./assets/images/header-2.png');
+}
+.header_3 {
+  background-image: url('./assets/images/header-3.png');
+}
+.prof-detaile {
   position: absolute;
-  bottom:3px;
+  left: 15px;
+  bottom: 25px;
+  display: table;
 }
-
-.cover-content h2 {
-  font-size: 20px;
-
+.prof-header .table-cell {
+  vertical-align: top;
 }
-
-.cover-content p {
-  float:left;
-  padding-left: 20px;
-  font-size: 12px;
-}
-
-.icon {
+.header-prof-icon {
+  width: 70px;
+  height: 70px;
   border-radius: 50%;
-  border: 3px solid white;
+  border: 2px solid white;
   box-shadow: 0 5px 5px black;
-  float:left;
+}
+.prof-bio {
+  padding-left: 20px;
+}
+.name {
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.375em;
+  vertical-align: sub;
+  margin-right: 16px;
+}
+.attribute {
+  color: #f5f5f5;
+  font-size: .875em;
+  margin-top: 3px;
 }
 
-/*---section---*/
-
+/* intro
+--------------------------------- */
 .intro-wrapper {
   text-align: center;
   margin:20px 0;
   color:#5f5d60;
 }
 
-/*---section---*/
-
+/* contents
+--------------------------------- */
 .contents-wrapper {
-/*   width: 100%; */
+  width: 100%;
   background-color: #ffff7f;
   padding: 10px;
   border: 1px solid #f5deb3;
   text-align: center;
   margin: auto;
 }
-
 .contents-wrapper h2 {
   background-color: #7fff7f;
   color:white;
 }
-
+.contents-wrapper p {
+  color:gray;
+  margin: 20px 0;
+}
 .contents ul {
   list-style-type: none;
-  /* margin:10px; */
 }
-
 .contents li {
   display :inline-block;
 }
 
-/* mask */
+/* mask
+--------------------------------- */
 .contents-icon {
-	width:			200px;
-	height:			200px;
+	width:			150px;
+	height:			150px;
 	overflow:		hidden;
 	margin:			10px 8px 10px 16px;
 	position:		relative;
@@ -172,9 +199,8 @@ h1 {
 	bottom:			0;
 }
 
-
-/* footer */
-
+/* footer
+--------------------------------- */
 footer {
   height: 120px;
   color:gray;
@@ -182,19 +208,19 @@ footer {
   margin-top: 40px;
 }
 
-
-/* si */
+/* modal
+--------------------------------- */
 .signup-show {
   background-color: #0075c2;
   width:80%;
   font-weight: bold;
   padding: 8px 24px;
+  margin:10px 0;
   color: white;
   display: inline-block;
   opacity: 0.8;
   border-radius: 5px;
 }
-
 .signup-modal-wrapper {
   display: none;
   position: fixed;
@@ -205,19 +231,15 @@ footer {
   background-color: rgba(0, 0, 0, 0.6);
   z-index: 100;
 }
-
 .modal {
   position: absolute;
   top: 20%;
-  left: 34%;
   background-color: #e6ecf0;
-  padding: 20px 0 40px;
+  padding: 24px 0 40px;
   border-radius: 10px;
-  width: 450px;
   height: auto;
   text-align: center;
 }
-
 .fa-times {
   position: absolute;
   top: 12px;
@@ -229,30 +251,26 @@ footer {
 #signup-form {
   width: 100%;
 }
-
 #signup-form h2 {
   color: #5f5d60;
   letter-spacing: 1px;
-  margin: 20px;
+  margin: 10px;
 }
-
 #signup-form p {
   margin: 20px;
   color:gray;
 }
-
 #signup-form input {
-  width: 320px;
+  width: 70%;
   margin-bottom: 20px;
   font-size: 12px;
   padding: 12px 12px;
   border: 1px solid #d0d5d8;
   border-radius: 5px;
 }
-
 #submit-btn {
   display: inline-block;
-  padding: 14px 140px;
+  padding: 12px 48px;
   background-color: #67b5b7;
   border: none;
   border-radius: 3px;
